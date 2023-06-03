@@ -2,28 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Mark, Please Finish-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Charity Website</title>
 </head>
 <body>
-    <p>Hi Mark. I've written some comments below to get you started</p>
-    <p>Please make sure to create a new branch when creating this site</p>
-    <p>And do a pull request so I can view your changes.</p>
-    <!--Mark... Make sure to use Bootstrap 5 so we can keep
-      site mobile responsive-->
 
-    <!--Navigation-->
-    <!--Charity name, Home, About, Contact etc-->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Charity Organization</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#causes">Causes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!--Hero Banner-->
-    <!--Maybe add a call to action here-->
+    <section class="hero bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Join Us in Making a Difference</h1>
+        <p class="lead">Together, we can change lives and create a better world.</p>
+        <a href="#causes" class="btn btn-light btn-lg">Explore Causes</a>
+      </div>
+    </section>
 
     <!--About us Section-->
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/about-us.jpg" alt="About Us" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5">About Our Charity Organization</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut rhoncus massa. In et fringilla nisl. Quisque ullamcorper, arcu vel feugiat tincidunt, urna metus venenatis turpis, vitae fringilla urna erat sed nulla.</p>
+          <a href="#causes" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!--Info on what charity does-->
-
+  <!-- Causes Section -->
+  <section id="causes" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Causes</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/clean-water.jpg" class="card-img-top" alt="Cause 1">
+            <div class="card-body">
+              <h5 class="card-title">Clean Water Initiative</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Donate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/education.jpg" class="card-img-top" alt="Cause 2">
+            <div class="card-body">
+              <h5 class="card-title">Education for All</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Donate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/healthcare.jpg" class="card-img-top" alt="Cause 3">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Support</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <!--Contact section with address and message form-->
+    
+ <!-- Contact Section -->
+ <section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <p>Contact information:</p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt-fill"></i> 123 Main Street, City, Country</li>
+          <li><i class="bi bi-envelope-fill"></i> charity@example.com</li>
+          <li><i class="bi bi-telephone-fill"></i> +1 123-456-7890</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!--Footer section-->
+<!-- Footer -->
+<footer class="bg-dark text-white py-3">
+  <div class="container text-center">
+    <p>&copy; 2023 Charity Organization. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
